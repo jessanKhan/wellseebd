@@ -4,8 +4,9 @@ import ContactUs from './Components/ContactUs/contactUs';
 import Social from './Components/Social/social';
 import Ecommerce from './Components/Ecommerce/ecommerce';
 import AdminHeader from './Components/Admin/Header/header'
+import { Route, Link ,Routes} from "react-router-dom";
 
-function App() {
+const Home = () => {
   return (
     <div className="container">
       <Header />
@@ -13,8 +14,17 @@ function App() {
       <Social />
       <Ecommerce />
       <ContactUs />
-      <AdminHeader />
     </div>
+  );
+}
+
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/admin" element={<AdminHeader />} />
+    </Routes>
   );
 }
 
