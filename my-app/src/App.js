@@ -5,18 +5,22 @@ import Social from './Components/Social/social';
 import Ecommerce from './Components/Ecommerce/ecommerce';
 import AdminHeader from './Components/Admin/Header/header'
 import { Route, Link ,Routes} from "react-router-dom";
+import Home from './Components/Admin/home'
 
-const Home = () => {
-  return (
-    <div className="container">
-      <Header />
-      <AboutUs />
-      <Social />
-      <Ecommerce />
-      <ContactUs />
-    </div>
-  );
-}
+// const Home = () => {
+//   return (
+//     <>
+//     <div className="container">
+//       <Header />
+//       <AboutUs />
+//       <Social />
+//       <Ecommerce />
+//       <ContactUs />
+//       <Home />
+//     </div>
+//     </>
+//   );
+// }
 
 
 function App() {
