@@ -7,27 +7,27 @@ import AdminHeader from './Components/Admin/Header/header'
 import { Route, Link ,Routes} from "react-router-dom";
 import Home from './Components/Admin/home'
 
-// const Home = () => {
-//   return (
-//     <>
-//     <div className="container">
-//       <Header />
-//       <AboutUs />
-//       <Social />
-//       <Ecommerce />
-//       <ContactUs />
-//       <Home />
-//     </div>
-//     </>
-//   );
-// }
+const LandingPage = () => {
+  return (
+    <>
+    <div className="container">
+      <Header />
+      <AboutUs />
+      <Social />
+      <Ecommerce />
+      <ContactUs />
+      <Home />
+    </div>
+    </>
+  );
+}
 
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/admin" element={<AdminHeader />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/admin" element={<Home />} />
     </Routes>
   );
 }
